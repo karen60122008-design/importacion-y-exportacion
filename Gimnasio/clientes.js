@@ -1,4 +1,3 @@
-// cliente.js
 class Cliente {
     nombre
     apellido
