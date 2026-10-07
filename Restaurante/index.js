@@ -5,10 +5,10 @@ import Pedido from "./pedido.js";
 let plato1 = new Plato("Costillas San Luis", "Plato fuerte", 30000, true)
 let plato2 = new Plato("Limonada Cerezada", "Bebida", 8000, true)
 
-let cliente1 = new Cliente("Karen", "3212345608", "111111")
+let cliente1 = new Cliente("Cristian", "9686794", "3456859363")
 cliente1.verInfo()
 
-let pedido1 = new Pedido("02/9/2026", 101, cliente1)
+let pedido1 = new Pedido("10/08/2026", 24, cliente1)
 pedido1.agregarPlato(plato1)
 pedido1.agregarPlato(plato2)
 

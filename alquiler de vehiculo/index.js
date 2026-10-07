@@ -1,14 +1,12 @@
-import Vehiculo from "./vehiculo.js"
-import Cliente from "./cliente.js"
-import Alquiler from "./alquiler.js"
+import Vehiculo from "./vehiculo.js";
+import ClienteAlquiler from "./cliente.js";
+import Alquiler from "./alquiler.js";
 
-let carro = new Vehiculo("XYZ123", "Toyota", "2024")
-let moto = new Vehiculo("ABC45F", "Yamaha", "2023")
+let carro1 = new Vehiculo("XOZ243", "Toyota", "2025", "SUV")
+carro1.verVehiculo()
 
-let clienteMaria = new Cliente("María", "Gómez", "1029384756")
+let cliente1 = new ClienteAlquiler("Karen Ramirez", "9876567890", "31590934804")
+cliente1.verInfo()
 
-let alquiler1 = new Alquiler(clienteMaria, "02/10/2026", "10/10/2026")
-alquiler1.registrarVehiculo(carro)
-alquiler1.registrarVehiculo(moto)
-
+let alquiler1 = new Alquiler("02/09/2026", "11/10/2026", cliente1, carro1)
 alquiler1.verAlquiler()

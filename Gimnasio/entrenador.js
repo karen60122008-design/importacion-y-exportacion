@@ -10,8 +10,8 @@ class Entrenador {
     }
 
     verInfo() {
-        console.log("Nombre entrenador: " + this.nombre + " especialidad: " + this.especialidad + " teléfono: " + this.telefono)
+        console.log("Entrenador: " + this.nombre + " - Especialidad: " + this.especialidad + " - Tel: " + this.telefono)
     }
 }
 
-export default Entrenador
+export default Entrenador;

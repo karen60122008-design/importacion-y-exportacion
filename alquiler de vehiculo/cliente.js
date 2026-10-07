@@ -1,17 +1,17 @@
-class Cliente {
+class ClienteAlquiler {
     nombre
-    apellido
     documento
+    telefono
 
-    constructor(nombre, apellido, documento) {
+    constructor(nombre, documento, telefono) {
         this.nombre = nombre
-        this.apellido = apellido
         this.documento = documento
+        this.telefono = telefono
     }
 
     verInfo() {
-        console.log("El cliente es " + this.nombre + " " + this.apellido + " documento: " + this.documento)
+        console.log("Cliente: " + this.nombre + " - Doc: " + this.documento + " - Tel: " + this.telefono)
     }
 }
 
-export default Cliente
+export default ClienteAlquiler;

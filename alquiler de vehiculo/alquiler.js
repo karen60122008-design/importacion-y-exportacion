@@ -1,25 +1,21 @@
 class Alquiler {
     fechaInicio
-    fechaDevolucion
+    fechaFinalizacion
+    cliente
+    vehiculo
 
-    constructor(cliente, fechaInicio, fechaDevolucion) {
-        this.cliente = cliente
+    constructor(fechaInicio, fechaFinalizacion, cliente, vehiculo) {
         this.fechaInicio = fechaInicio
-        this.fechaDevolucion = fechaDevolucion
-        this.vehiculos = []
-    }
-
-    registrarVehiculo(vehiculo) {
-        this.vehiculos.push(vehiculo)
+        this.fechaFinalizacion = fechaFinalizacion
+        this.cliente = cliente
+        this.vehiculo = vehiculo
     }
 
     verAlquiler() {
-        this.cliente.verInfo()
-        console.log("Fecha inicio: " + this.fechaInicio + " fecha devolución: " + this.fechaDevolucion)
-        for (let i = 0; i < this.vehiculos.length; i++) {
-            this.vehiculos[i].verVehiculo()
-        }
+        console.log("Fecha Inicio: " + this.fechaInicio + " | Fecha Fin: " + this.fechaFinalizacion)
+        console.log("Cliente: " + this.cliente.nombre + " (Doc: " + this.cliente.documento + ")")
+        this.vehiculo.verVehiculo()
     }
 }
 
-export default Alquiler
+export default Alquiler;
