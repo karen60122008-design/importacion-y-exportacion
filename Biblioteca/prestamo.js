@@ -1,5 +1,6 @@
 import Libros from "./libros.js"
 class Prestamo{
+    usuario
     fechaPrestamo
     fechaDevolucion
     constructor(usuario, fechaPrestamo, fechaDevolucion) {
